@@ -1,10 +1,16 @@
 const http = require('http');
 const fs = require('fs');
+const _ = require('lodash');
 const server = http.createServer((req, res) => {
 	//console.log(req);//output shows the request object
-	console.log(req.url, req.method);
+	//console.log(req.url, req.method);
 	// console.log('request made .');
 	// res.end("pramit");
+
+
+	//lodash
+	const num = _.random(0, 20);
+	console.log(num);
 
 	//response object --->
 	// res.setHeader('Content-Type', 'text/html');// set header content type .
@@ -15,13 +21,13 @@ const server = http.createServer((req, res) => {
 
 
 	//Returning Html pages--->
-
+	//Routing -->
 	let path = './views/';
 	switch (req.url) {
 		case '/':
 			path += 'index.html'
 			break;
-		case '/about':
+		case '/about-us':
 			path += 'about.html'
 			break;
 		default:
@@ -40,6 +46,13 @@ const server = http.createServer((req, res) => {
 	});
 
 });
+
+
+
+
+
+
+
 server.listen(8080, 'localhost', () => {
 	console.log('listening for requests on port 8080')
 })

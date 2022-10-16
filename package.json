@@ -1,0 +1,23 @@
+{
+  "name": "pramit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Server_create.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pramit-mondal76/Node-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pramit-mondal76/Node-js/issues"
+  },
+  "homepage": "https://github.com/pramit-mondal76/Node-js#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
