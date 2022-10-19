@@ -56,3 +56,5 @@ const server = http.createServer((req, res) => {
 server.listen(8080, 'localhost', () => {
 	console.log('listening for requests on port 8080')
 })
+
+//nodemon is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected.
